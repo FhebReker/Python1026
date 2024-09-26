@@ -31,10 +31,10 @@ if shape.lower() == "rectangle":
         perimeter = 2* width + 2 * height
     # Otherwise stop final display
     else:
-        print("Invalid input, abandoning rectangle")
+        print("Invalid value entered")
         shapeAbandoned = True
         
-# If rectangle, give parameters
+# If triangle, give parameters
 elif shape.lower() == "triangle":
     base = float(input("What is the length of the base of your triangle? "))
     side1 = float(input("What's the length of one of the other sides of your triangle? "))
@@ -48,10 +48,10 @@ elif shape.lower() == "triangle":
 
     # Otherwise stop final display
     else:
-        print("Invalid input, abandoning triangle")
+        print("Invalid value entered")
         shapeAbandoned = True
 
-# If rectangle, give parameters
+# If circle, give parameters
 elif shape.lower() == "circle":
     radius = float(input("What's the radius of your circle? "))
         
@@ -62,10 +62,10 @@ elif shape.lower() == "circle":
     
     # Otherwise stop final display
     else:
-        print("Invalid input, abandoning circle")
+        print("Invalid value entered")
         shapeAbandoned = True
 
-# If rectangle, give parameters
+# If trapezoid, give parameters
 elif shape.lower() == "trapezoid":
     topSide = float(input("What's the length of the top of your trapezoid? "))
     base = float(input("What is the length of the base of your trapezoid? "))
@@ -80,26 +80,26 @@ elif shape.lower() == "trapezoid":
 
     # Otherwise stop final display
     else:
-        print("Invalid input, abandoning triangle")
+        print("Invalid value entered")
         shapeAbandoned = True
 
-# If rectangle, give parameters
+# If hexagon, give parameters
 elif shape.lower() == "hexagon":
     sideLength = float(input("What's the side length of your hexagon? "))
         
     # If value is positive and non-zero, calculate area and perimeter
     if sideLength > 0:
-        area = 3 * math.sqrt(3) / 2 * sideLength**2
+        area = ((3 * math.sqrt(3)) / 2) * sideLength**2
         perimeter = 6 * sideLength
 
     # Otherwise stop final display
     else:
-        print("Invalid input, abandoning hexagon")
+        print("Invalid value entered")
         shapeAbandoned = True
 
 # If not one of the above shapes, stop final display
 else:
-    print("Invalid input, abandoning shape")
+    print("Invalid shape entered")
     shapeAbandoned = True
 
 # If shape is valid, display name, area and perimeter
