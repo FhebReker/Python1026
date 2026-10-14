@@ -63,7 +63,7 @@ A multi-file Python application that evaluates password strength and can generat
 - Input validation
 - Program flow control
  
-Files:
+## Files:
 - `password.py`
 - `generate.py`
 - `login.py`
@@ -93,7 +93,7 @@ A data-processing application that analyzes YouTube comments and determines domi
 - Exception handling
 - Modular software design
  
-Files:
+## Files:
 - `main.py`
 - `emotions.py`
  
@@ -124,7 +124,7 @@ An object-oriented system for managing airports, flights, and route information.
 - Exception handling
 - Software architecture
  
-Files:
+## Files:
 - `Airport.py`
 - `Flight.py`
 - `Assign4.py`
